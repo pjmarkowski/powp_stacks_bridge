@@ -1,10 +1,10 @@
 package edu.kis.vh.stacks;
 
 public class Stack {
-
-	private int[] items = new int[12];
-
-	public int total = -1;
+	private final int SIZE = 12;
+	private final int EMPTY_STACK = -1;
+	private int[] items = new int[SIZE];
+	private int total = EMPTY_STACK;
 	
 	public void push(int i) {
 		if (!isFull())
@@ -12,7 +12,7 @@ public class Stack {
 	}
 	
 	public boolean isEmpty() {
-			return total == -1;
+			return total == EMPTY_STACK;
 		}
 		
 	public boolean isFull() {
@@ -21,14 +21,14 @@ public class Stack {
 			
 	public int top() {
 		if (isEmpty()) {
-			return -1;
+			return EMPTY_STACK;
 		}
 		return items[total];
 	}
 
 	public int pop() {
 		if (isEmpty()) {
-			return -1;
+			return EMPTY_STACK;
 		}
 		return items[total--];
 	}
