@@ -9,8 +9,8 @@ class StacksDemo {
 	public static void main(String[] args) {
 		DefaultStacksFactory factory = new DefaultStacksFactory();
 		
-		stack[] stacks = { factory.GetStandardStack(), factory.GetFalseStack(),
-				factory.GetFIFOStack(), factory.GetHanoiStack()};
+		stack[] stacks = { factory.getStandardStack(), factory.getFalseStack(),
+				factory.getFIFOStack(), factory.getHanoiStack()};
 		
 		for (int i = 1; i < 15; i++) {
 			for (int j = 0; j < 3; j++) {
