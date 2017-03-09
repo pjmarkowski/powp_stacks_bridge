@@ -42,3 +42,6 @@ Linia 27: dodanie klamer dla petli while
 Linia 33: przeniesienie calego wypisania do jednej linii
 */
 
+/*
+kombinacja ta (w środowisku IntelliJ alt + ->) przechodzi pomiedzy otwartymi oknami w edytorze
+*/
