@@ -1,19 +1,19 @@
 package edu.kis.vh.stacks.factory;
 
-import edu.kis.vh.stacks.stack;
+import edu.kis.vh.stacks.Stack;
 import edu.kis.vh.stacks.StackFIFO;
 import edu.kis.vh.stacks.StackHanoi;
 
 public class DefaultStacksFactory implements StacksFactory {
 
 	@Override
-	public stack getStandardStack() {
-		return new stack();
+	public Stack getStandardStack() {
+		return new Stack();
 	}
 
 	@Override
-	public stack getFalseStack() {
-		return new stack();
+	public Stack getFalseStack() {
+		return new Stack();
 	}
 
 	@Override

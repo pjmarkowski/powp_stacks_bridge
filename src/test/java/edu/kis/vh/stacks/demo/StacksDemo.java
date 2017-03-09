@@ -1,7 +1,7 @@
 package edu.kis.vh.stacks.demo;
 
 import edu.kis.vh.stacks.StackHanoi;
-import edu.kis.vh.stacks.stack;
+import edu.kis.vh.stacks.Stack;
 import edu.kis.vh.stacks.factory.DefaultStacksFactory;
 
 class StacksDemo {
@@ -9,7 +9,7 @@ class StacksDemo {
 	public static void main(String[] args) {
 		DefaultStacksFactory factory = new DefaultStacksFactory();
 		
-		stack[] stacks = { factory.getStandardStack(), factory.getFalseStack(),
+		Stack[] stacks = { factory.getStandardStack(), factory.getFalseStack(),
 				factory.getFIFOStack(), factory.getHanoiStack()};
 		
 		for (int i = 1; i < 15; i++) {
