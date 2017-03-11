@@ -18,7 +18,7 @@ public class Stack {
 	public boolean isFull() {
 				return total == 11;
 			}
-			
+
 	public int top() {
 		if (isEmpty()) {
 			return EMPTY_STACK;
@@ -31,5 +31,9 @@ public class Stack {
 			return EMPTY_STACK;
 		}
 		return items[total--];
+	}
+
+	public int getTotal() {
+		return total;
 	}
 }
