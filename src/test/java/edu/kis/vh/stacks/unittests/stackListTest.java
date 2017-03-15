@@ -41,6 +41,13 @@ public class stackListTest {
         assertThat(TEST_RESULT, is(RESULT));
     }
 
+    @Test
+    public void shouldPeekElement() {
+        final int VALUE = 3;
 
+        stackList.pushElement(VALUE);
+        final int TEST_VALUE = stackList.peek();
 
+        assertThat(TEST_VALUE, is(VALUE));
+    }
 }
