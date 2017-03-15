@@ -50,4 +50,23 @@ public class stackListTest {
 
         assertThat(TEST_VALUE, is(VALUE));
     }
+
+    @Test
+    public void shouldPopElement() {
+        final int VALUE = 3;
+
+        stackList.pushElement(VALUE);
+        final int TEST_VALUE = stackList.pop();
+
+        assertThat(TEST_VALUE, is(VALUE));
+    }
+
+    @Test
+    public void shouldBeEmptyWhilePopElement() {
+        final int EMPTY_STACK_VALUE = -1;
+
+        final int TEST_VALUE = stackList.pop();
+
+        assertThat(TEST_VALUE, is(EMPTY_STACK_VALUE));
+    }
 }
