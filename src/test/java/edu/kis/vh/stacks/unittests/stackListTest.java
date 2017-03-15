@@ -32,4 +32,15 @@ public class stackListTest {
         assertThat(TEST_RESULT, is(RESULT));
     }
 
+    @Test
+    public void shouldNotBeFull() {
+        final boolean RESULT = false;
+
+        final boolean TEST_RESULT = stackList.full();
+
+        assertThat(TEST_RESULT, is(RESULT));
+    }
+
+
+
 }
