@@ -36,6 +36,7 @@ public class StackList {
 	 *
 	 * @return zawsze zwraca false
 	 */
+	//TODO: jezeli funkcja full zawsze zwraca false to znaczy ze nie jest potrzebna albo zostala zle zainplementowana
 	public boolean full() {
 		return false;
 	}
