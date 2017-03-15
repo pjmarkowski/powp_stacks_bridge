@@ -21,4 +21,15 @@ public class stackListTest {
 
         assertThat(VALUE, is(stackList.peek()));
     }
+
+
+    @Test
+    public void shouldBeEmpty() {
+        final boolean RESULT = true;
+
+        final boolean TEST_RESULT = stackList.empty();
+
+        assertThat(TEST_RESULT, is(RESULT));
+    }
+
 }
