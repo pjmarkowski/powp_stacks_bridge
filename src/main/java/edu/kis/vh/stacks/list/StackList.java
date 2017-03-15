@@ -1,8 +1,17 @@
 package edu.kis.vh.stacks.list;
 
+/**
+ * @author Piotr
+ *
+ */
 public class StackList {
 
 	private Node last;
+
+	/**
+	 *
+	 * @param i element do wypchniecia
+	 */
 
 	public void pushElement(int i) {
 		if (last == null)
@@ -14,14 +23,27 @@ public class StackList {
 		}
 	}
 
+	/**
+	 *
+	 * @return zwraca true jesli jest pusty
+	 */
+
 	public boolean empty() {
 		return last == null;
 	}
 
+	/**
+	 *
+	 * @return zawsze zwraca false
+	 */
 	public boolean full() {
 		return false;
 	}
 
+	/**
+	 *
+	 * @return zwraca -1 gdy pusty w przeciwnym razie zwraca wartosc
+	 */
 	public int peek() {
 		if (empty())
 			return -1;
