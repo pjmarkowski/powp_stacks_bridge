@@ -34,3 +34,7 @@ public class Stack {
         return stackList.pop();
     }
 }
+
+/***
+ * Dzieki takiemu rozwiazaniu mozna uzyc jednej z 2 klas StackArray lub StackList
+ */
