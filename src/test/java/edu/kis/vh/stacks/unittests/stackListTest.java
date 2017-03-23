@@ -1,7 +1,6 @@
 package edu.kis.vh.stacks.unittests;
 
 import edu.kis.vh.stacks.list.StackList;
-import org.junit.Assert;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -17,9 +16,9 @@ public class stackListTest {
     public void shouldPushElement() {
         final int VALUE = 3;
 
-        stackList.pushElement(VALUE);
+        stackList.push(VALUE);
 
-        assertThat(VALUE, is(stackList.peek()));
+        assertThat(VALUE, is(stackList.top()));
     }
 
 
@@ -27,7 +26,7 @@ public class stackListTest {
     public void shouldBeEmpty() {
         final boolean RESULT = true;
 
-        final boolean TEST_RESULT = stackList.empty();
+        final boolean TEST_RESULT = stackList.isEmpty();
 
         assertThat(TEST_RESULT, is(RESULT));
     }
@@ -36,7 +35,7 @@ public class stackListTest {
     public void shouldNotBeFull() {
         final boolean RESULT = false;
 
-        final boolean TEST_RESULT = stackList.full();
+        final boolean TEST_RESULT = stackList.isFull();
 
         assertThat(TEST_RESULT, is(RESULT));
     }
@@ -45,8 +44,8 @@ public class stackListTest {
     public void shouldPeekElement() {
         final int VALUE = 3;
 
-        stackList.pushElement(VALUE);
-        final int TEST_VALUE = stackList.peek();
+        stackList.push(VALUE);
+        final int TEST_VALUE = stackList.top();
 
         assertThat(TEST_VALUE, is(VALUE));
     }
@@ -55,7 +54,7 @@ public class stackListTest {
     public void shouldPopElement() {
         final int VALUE = 3;
 
-        stackList.pushElement(VALUE);
+        stackList.push(VALUE);
         final int TEST_VALUE = stackList.pop();
 
         assertThat(TEST_VALUE, is(VALUE));

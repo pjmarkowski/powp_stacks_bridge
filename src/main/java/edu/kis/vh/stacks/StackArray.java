@@ -1,9 +1,11 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.list.StackInterface;
+
 /**
  * Created by Piotr on 23.03.2017.
  */
-public class StackArray {
+public class StackArray implements StackInterface{
 
     private final int SIZE = 12;
     private final int EMPTY_STACK = -1;

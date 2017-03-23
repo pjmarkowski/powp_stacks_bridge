@@ -1,9 +1,10 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.list.StackInterface;
 import edu.kis.vh.stacks.list.StackList;
 
 public class Stack {
-	private StackList stackList;
+	private StackInterface stackList;
 
     public Stack(StackList stackList) {
         this.stackList = stackList;

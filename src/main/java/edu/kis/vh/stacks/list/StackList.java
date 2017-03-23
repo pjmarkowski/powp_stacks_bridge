@@ -4,7 +4,7 @@ package edu.kis.vh.stacks.list;
  * @author Piotr
  *
  */
-public class StackList {
+public class StackList implements StackInterface {
 
 	private Node last;
 
@@ -13,7 +13,7 @@ public class StackList {
 	 * @param i element do wypchniecia
 	 */
 
-	public void pushElement(int i) {
+	@Override public void push(int i) {
 		if (last == null)
 			last = new Node(i);
 		else {
@@ -28,7 +28,7 @@ public class StackList {
 	 * @return zwraca true jesli jest pusty
 	 */
 
-	public boolean empty() {
+	@Override public boolean isEmpty() {
 		return last == null;
 	}
 
@@ -36,8 +36,8 @@ public class StackList {
 	 *
 	 * @return zawsze zwraca false
 	 */
-	//TODO: jezeli funkcja full zawsze zwraca false to znaczy ze nie jest potrzebna albo zostala zle zainplementowana
-	public boolean full() {
+	//TODO: jezeli funkcja isFull zawsze zwraca false to znaczy ze nie jest potrzebna albo zostala zle zainplementowana
+	@Override public boolean isFull() {
 		return false;
 	}
 
@@ -45,14 +45,14 @@ public class StackList {
 	 *
 	 * @return zwraca -1 gdy pusty w przeciwnym razie zwraca wartosc
 	 */
-	public int peek() {
-		if (empty())
+	@Override public int top() {
+		if (isEmpty())
 			return -1;
 		return last.getValue();
 	}
 
-	public int pop() {
-		if (empty())
+	@Override public int pop() {
+		if (isEmpty())
 			return -1;
 		int ret = last.getValue();
 		last = last.getPrev();
@@ -98,5 +98,3 @@ class Node {
 		this.next = next;
 	}
 }
-
-
