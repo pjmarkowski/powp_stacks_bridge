@@ -5,16 +5,16 @@ public class Stack {
 	private final int EMPTY_STACK = -1;
 	private int[] items = new int[SIZE];
 	private int total = EMPTY_STACK;
-	
+
 	public void push(int i) {
 		if (!isFull())
 		items[++total] = i;
 	}
-	
+
 	public boolean isEmpty() {
 			return total == EMPTY_STACK;
 		}
-		
+
 	public boolean isFull() {
 				return total == 11;
 			}
