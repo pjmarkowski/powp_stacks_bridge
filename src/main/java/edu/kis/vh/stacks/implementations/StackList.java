@@ -8,7 +8,7 @@ public class StackList implements StackInterface {
 
 	private Node last;
 
-	/**
+    /**
 	 *
 	 * @param i element do wypchniecia
 	 */
@@ -47,13 +47,13 @@ public class StackList implements StackInterface {
 	 */
 	@Override public int top() {
 		if (isEmpty())
-			return -1;
+			return EMPTY_STACK;
 		return last.getValue();
 	}
 
 	@Override public int pop() {
 		if (isEmpty())
-			return -1;
+			return EMPTY_STACK;
 		int ret = last.getValue();
 		last = last.getPrev();
 		return ret;

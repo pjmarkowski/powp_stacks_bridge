@@ -5,6 +5,8 @@ package edu.kis.vh.stacks.implementations;
  */
 public interface StackInterface {
 
+    int EMPTY_STACK = -1;
+
     void push(int i);
 
     boolean isEmpty();

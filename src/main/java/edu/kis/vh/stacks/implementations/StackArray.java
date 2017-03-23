@@ -6,7 +6,6 @@ package edu.kis.vh.stacks.implementations;
 public class StackArray implements StackInterface{
 
     private final int SIZE = 12;
-    private final int EMPTY_STACK = -1;
     private int[] items = new int[SIZE];
     private int total = EMPTY_STACK;
 
