@@ -1,6 +1,4 @@
-package edu.kis.vh.stacks.list;
-
-import edu.kis.vh.stacks.list.StackInterface;
+package edu.kis.vh.stacks.implementations;
 
 /**
  * Created by Piotr on 23.03.2017.

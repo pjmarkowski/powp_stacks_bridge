@@ -1,6 +1,6 @@
 package edu.kis.vh.stacks.unittests;
 
-import edu.kis.vh.stacks.list.StackList;
+import edu.kis.vh.stacks.implementations.StackList;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;

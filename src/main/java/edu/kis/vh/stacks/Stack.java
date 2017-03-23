@@ -1,7 +1,7 @@
 package edu.kis.vh.stacks;
 
-import edu.kis.vh.stacks.list.StackInterface;
-import edu.kis.vh.stacks.list.StackList;
+import edu.kis.vh.stacks.implementations.StackInterface;
+import edu.kis.vh.stacks.implementations.StackList;
 
 public class Stack {
 	private StackInterface stackList;

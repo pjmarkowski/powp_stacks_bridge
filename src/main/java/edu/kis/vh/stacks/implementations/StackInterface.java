@@ -1,4 +1,4 @@
-package edu.kis.vh.stacks.list;
+package edu.kis.vh.stacks.implementations;
 
 /**
  * Created by Piotr on 23.03.2017.
