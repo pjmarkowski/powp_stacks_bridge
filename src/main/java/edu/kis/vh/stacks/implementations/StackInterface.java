@@ -5,7 +5,7 @@ package edu.kis.vh.stacks.implementations;
  */
 public interface StackInterface {
 
-    int EMPTY_STACK = -1;
+    int EMPTY_STACK = 0;
 
     void push(int i);
 
@@ -17,4 +17,7 @@ public interface StackInterface {
     int top();
 
     int pop();
+    /**
+     * dzieki przesunieciu wspolnych stalych klas StackArray i StackList do interfejsu wystarczylo teraz zmienic wartosc zmiennej EMPTY_STACK w jednym miejscu
+     */
 }
