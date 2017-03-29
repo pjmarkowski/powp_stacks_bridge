@@ -1,5 +1,6 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.implementations.StackArray;
 import edu.kis.vh.stacks.implementations.StackList;
 
 public class StackHanoi extends Stack {
@@ -11,6 +12,10 @@ public class StackHanoi extends Stack {
 	}
 
 	public StackHanoi() {
+	}
+
+	public StackHanoi(StackArray stackArray) {
+
 	}
 
 	public int reportRejected() {

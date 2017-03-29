@@ -14,22 +14,14 @@ public class StackFIFO extends Stack {
 
 	private final Stack temp = new Stack(new StackList());
 
-    /**
-     *Najlepszym wyborem bedzie uzycie StackList
-     */
+	public StackFIFO(StackArray stackArray) {
+	}
 
-	@Override
-	public int pop() {
-		while (!isEmpty()) {
-			temp.push(super.pop());
-		}
+	/**
+	 * Najlepszym wyborem bedzie uzycie StackList
+	 */
 
-		int ret = temp.pop();
-		
-		while (!temp.isEmpty()) {
-			push(temp.pop());
-		}
-
-		return ret;
+	@Override public int pop() {
+		return 0;
 	}
 }

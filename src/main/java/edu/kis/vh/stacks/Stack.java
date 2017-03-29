@@ -1,5 +1,6 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.implementations.StackArray;
 import edu.kis.vh.stacks.implementations.StackInterface;
 import edu.kis.vh.stacks.implementations.StackList;
 
@@ -12,6 +13,10 @@ public class Stack {
 
     public Stack() {
         this.stackList = new StackList();
+    }
+
+    public Stack(StackArray stackArray) {
+
     }
 
     public void push(int i) {
