@@ -15,7 +15,6 @@ public class StackHanoi extends Stack {
 	}
 
 	public StackHanoi(StackArray stackArray) {
-
 	}
 
 	public int reportRejected() {
